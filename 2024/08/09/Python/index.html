@@ -1,0 +1,171 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Python | Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="学习历程及笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python">
+<meta property="og:url" content="http://example.com/2024/08/09/Python/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="学习历程及笔记">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2024-08-08T16:00:00.000Z">
+<meta property="article:modified_time" content="2024-08-10T11:42:48.000Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2024/08/09/Python/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Python',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-08-10 19:42:48'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">5</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hexo"><span class="site-name">Hexo</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Python</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-08-08T16:00:00.000Z" title="Created 2024-08-09 00:00:00">2024-08-09</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-08-10T11:42:48.000Z" title="Updated 2024-08-10 19:42:48">2024-08-10</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%AD%A6%E4%B9%A0/">从零开始的学习</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Python"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="Python学习历程"><a href="#Python学习历程" class="headerlink" title="Python学习历程"></a>Python学习历程</h2><h3 id="2024-08-07"><a href="#2024-08-07" class="headerlink" title="2024-08-07"></a>2024-08-07</h3><p>前面几天在steam教育网学习完了Python的基础语法，进阶语法大概看了一下，基础语法因为有题目练习，所以没什么问题，进阶语法那里没什么题目，大概浏览了一遍，感觉上没什么问题，但是具体还不知道怎么用。</p>
+<p>学完基础语法后，打算建立一个Blog记录自己的学习历程，分享资源啥的，花了2-3天部署blog，用的hexo，期间出现了很多问题，比如npm的配置，hexo的下载，还有hexo部署在git-page上的页面 css样式缺失，所幸都解决了。</p>
+<p>今天原本想继续完善blog的，但是好多搞不太懂，网上也搜索不到解决方案，比如友情链接，更改_date中 的link.yml后，Blog页面完全不显示，加上后续的好多配置用的Java、html语言，看不懂，完全看不懂，总结是现阶段去搞blog太浪费时间了，等后续学了java和html，再去部署也不迟。</p>
+<p>在部署blog的过程中，看到了好多大佬的blog，深深认识到自己是个废物的现实，今年已经23岁了，高中耽搁了两年，大学大三还留级了一年，今年9月份又读大三，985本，机械专业，代码基础基本为0，专业基础也一般。</p>
+<p>参加了学生会，虽然做到了副主席，但当时因为自己摆烂，今年5月份休学了，副主席的工作也没做好。</p>
+<p>大学前两年虽然在卷绩点，但完全不明确自己努力的方向，当时最简单的思想就是想保研，说来好笑，大一刚入学一直想转专业，因为本人学校的机械专业太拉了，保研率也低，属于专业鄙视链低端，自己也认为自己的专业丢脸，说是要转专业，但是根本就没怎么做准备，自然转专业失败了，后续就说服自己在本专业继续待下去深耕，绩点不好不坏，前10%左右，按理说，只要自己不出差错，保研是没啥问题，但果然出差错了，大三在学校的职工宿舍租房，开启了自己的摆烂生涯，直至今年5月份休学。</p>
+<p>感觉自己的大学过得很纠结，怎么说呢，感觉自己一个特别慕强的人，面对上级、长辈，完全无法做到那种正常的沟通，很拘谨、唯唯诺诺的，姿态特别低，这也为自己的废物埋下了伏笔，因为慕强，所以想获得权力，但是不是通过能力去获得，而是通过小部分的能力+讨好老师、领导，做好表面工作，久而久之养成了习惯依赖，遇到问题，因为自己老是做表面工作，没有真正的能力，所以自己根本解决不了：学生会的工作，会推给大二、大一的学弟学妹；竞赛的工作，参加过电工杯、数模国赛，因为自己只会做PPT、Word，只想负责写作，关于代码和解题，完全推给别人，虽然有一个拿了国二的项目，但自己做好的也是PPT、Word，建模是另一位同学负责的，视频是找同学帮忙做的，动画和渲染是找淘宝的。现在想来，大二下的时候，自己已经出现问题了，完全没有能力。</p>
+<p>现在的想法很简单，我要的不是安于现状，不是在这个学校苟延残喘的混研究生，我要的是真才实学，要的是追求梦想，不要拘泥于成都，世界这么大，你不应该只呆在这。</p>
+<p>说了这么多，感觉偏题了，Python学完后，现在初步想法是练题（好像要去牛人网、letcode刷，但是还没看）、做项目，现在还是比较迷茫，基本上学习都是参考网上开源的教程，真的特别感谢开源的大佬。</p>
+<p>其实感觉安排也是有问题的，目前是打算参加大数和六级（六级虽然过了，但是分数很低，所以想重新刷），感觉普通话和教师，没必要去考，我感觉干家教兼职，不太需要，这个后面再说吧。</p>
+<p>现在就是学好数学，补下计算机科班前面的书，学习语言，做项目，后续可以联系下代码的实习，准备考研转码，至少码我还是感兴趣的，机械的话，做好本科阶段该做的就好了。</p>
+<h2 id="学习笔记"><a href="#学习笔记" class="headerlink" title="学习笔记"></a>学习笔记</h2><h3 id="练习题"><a href="#练习题" class="headerlink" title="练习题"></a>练习题</h3><h4 id="将串列-‘a’-’b’-’c’-’d’-’e’-’f’-变成-‘a’-’b’-’c’-‘d’-’e’-’f’-将list拆为两个list）"><a href="#将串列-‘a’-’b’-’c’-’d’-’e’-’f’-变成-‘a’-’b’-’c’-‘d’-’e’-’f’-将list拆为两个list）" class="headerlink" title="将串列[‘a’,’b’,’c’,’d’,’e’,’f’]变成[[‘a’,’b’,’c’],[‘d’,’e’,’f’]将list拆为两个list）"></a>将串列[‘a’,’b’,’c’,’d’,’e’,’f’]变成[[‘a’,’b’,’c’],[‘d’,’e’,’f’]将list拆为两个list）</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">num_list = [<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;b&#x27;</span>,<span class="string">&#x27;c&#x27;</span>,<span class="string">&#x27;d&#x27;</span>,<span class="string">&#x27;e&#x27;</span>,<span class="string">&#x27;f&#x27;</span>]</span><br><span class="line">midlength = <span class="built_in">len</span>(num_list)//<span class="number">2</span></span><br><span class="line">num_list_1 = num_list[:midlength]</span><br><span class="line">num_list_2 = num_list[midlength:]</span><br><span class="line">num_list_3 =[num_list_1,num_list_2]</span><br><span class="line"><span class="built_in">print</span>(num_list_3)</span><br></pre></td></tr></table></figure>
+
+<h4 id="输入数字，计算各位之和"><a href="#输入数字，计算各位之和" class="headerlink" title="输入数字，计算各位之和"></a>输入数字，计算各位之和</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">string_list = <span class="built_in">list</span>(intput(<span class="string">&#x27;请输入数字&#x27;</span>)) <span class="comment">#输入的数字为string→数字各位单独作为串列的元素</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">通常的做法是 int_list = [int(i) for i in intput(&#x27;请输入数字（格式为a b c ...)：&#x27;).split( )]</span></span><br><span class="line"><span class="string">这种要求格式，且还需要分割，当然两个都要记住</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line">int_list = [<span class="built_in">int</span>(i) <span class="keyword">for</span> i <span class="keyword">in</span> strin_list] <span class="comment">#</span></span><br><span class="line">result = <span class="built_in">sum</span>(int_list)</span><br><span class="line"><span class="built_in">print</span>(result)</span><br></pre></td></tr></table></figure>
+
+<h4 id="猜数字，几A几B"><a href="#猜数字，几A几B" class="headerlink" title="猜数字，几A几B"></a>猜数字，几A几B</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line">answer = random.sample(<span class="built_in">range</span>(<span class="number">1</span>,<span class="number">10</span>),<span class="number">4</span>)</span><br><span class="line"><span class="built_in">print</span>(answer)</span><br><span class="line">a = b = n =<span class="number">0</span> <span class="comment">#</span></span><br><span class="line"><span class="keyword">while</span> a!=<span class="number">4</span> :</span><br><span class="line">    a = b = n = <span class="number">0</span></span><br><span class="line">    user = <span class="built_in">list</span>(<span class="built_in">input</span>(<span class="string">&#x27;請輸入四個數字：&#x27;</span>))</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> user:</span><br><span class="line">      <span class="keyword">if</span> <span class="built_in">int</span>(user[n]) == answer[n]:</span><br><span class="line">        a += <span class="number">1</span></span><br><span class="line">      <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">int</span>(i) <span class="keyword">in</span> answer:</span><br><span class="line">          b += <span class="number">1</span></span><br><span class="line">      n += <span class="number">1</span></span><br><span class="line">    output = <span class="string">&#x27;,&#x27;</span>.join(user).replace(<span class="string">&#x27;,&#x27;</span>,<span class="string">&#x27;&#x27;</span>) <span class="comment">#重點：將串列轉換為字串的方法</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&#x27;<span class="subst">&#123;output&#125;</span>:<span class="subst">&#123;a&#125;</span>A<span class="subst">&#123;b&#125;</span>B&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;答對了！&#x27;</span>)</span><br></pre></td></tr></table></figure>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="http://example.com">John Doe</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="http://example.com/2024/08/09/Python/">http://example.com/2024/08/09/Python/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/08/09/%E5%8D%9A%E5%AE%A2%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E3%80%81%E6%A0%BC%E5%BC%8F/" title="博客搭建常用命令及格式"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Previous</div><div class="prev_info">博客搭建常用命令及格式</div></div></a></div><div class="next-post pull-right"><a href="/2024/08/09/%E6%96%87%E6%A1%88%E6%91%98%E6%8A%84/" title="文案摘抄"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Next</div><div class="next_info">文案摘抄</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Python%E5%AD%A6%E4%B9%A0%E5%8E%86%E7%A8%8B"><span class="toc-number">1.</span> <span class="toc-text">Python学习历程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2024-08-07"><span class="toc-number">1.1.</span> <span class="toc-text">2024-08-07</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0"><span class="toc-number">2.</span> <span class="toc-text">学习笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%83%E4%B9%A0%E9%A2%98"><span class="toc-number">2.1.</span> <span class="toc-text">练习题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B0%86%E4%B8%B2%E5%88%97-%E2%80%98a%E2%80%99-%E2%80%99b%E2%80%99-%E2%80%99c%E2%80%99-%E2%80%99d%E2%80%99-%E2%80%99e%E2%80%99-%E2%80%99f%E2%80%99-%E5%8F%98%E6%88%90-%E2%80%98a%E2%80%99-%E2%80%99b%E2%80%99-%E2%80%99c%E2%80%99-%E2%80%98d%E2%80%99-%E2%80%99e%E2%80%99-%E2%80%99f%E2%80%99-%E5%B0%86list%E6%8B%86%E4%B8%BA%E4%B8%A4%E4%B8%AAlist%EF%BC%89"><span class="toc-number">2.1.1.</span> <span class="toc-text">将串列[‘a’,’b’,’c’,’d’,’e’,’f’]变成[[‘a’,’b’,’c’],[‘d’,’e’,’f’]将list拆为两个list）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BE%93%E5%85%A5%E6%95%B0%E5%AD%97%EF%BC%8C%E8%AE%A1%E7%AE%97%E5%90%84%E4%BD%8D%E4%B9%8B%E5%92%8C"><span class="toc-number">2.1.2.</span> <span class="toc-text">输入数字，计算各位之和</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%8C%9C%E6%95%B0%E5%AD%97%EF%BC%8C%E5%87%A0A%E5%87%A0B"><span class="toc-number">2.1.3.</span> <span class="toc-text">猜数字，几A几B</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/08/09/7.25%20%E6%97%A5%E8%AE%B0/" title="7.25">7.25</a><time datetime="2024-08-08T16:00:00.000Z" title="Created 2024-08-09 00:00:00">2024-08-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/08/09/%E5%8D%9A%E5%AE%A2%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E3%80%81%E6%A0%BC%E5%BC%8F/" title="博客搭建常用命令及格式">博客搭建常用命令及格式</a><time datetime="2024-08-08T16:00:00.000Z" title="Created 2024-08-09 00:00:00">2024-08-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/08/09/Python/" title="Python">Python</a><time datetime="2024-08-08T16:00:00.000Z" title="Created 2024-08-09 00:00:00">2024-08-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/08/09/%E6%96%87%E6%A1%88%E6%91%98%E6%8A%84/" title="文案摘抄">文案摘抄</a><time datetime="2024-08-08T16:00:00.000Z" title="Created 2024-08-09 00:00:00">2024-08-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/08/09/%E6%AF%94%E8%B5%9B%E3%80%81%E8%AF%81%E4%B9%A6%E6%8A%A5%E5%90%8D%E5%8F%8A%E8%80%83%E8%AF%95%E6%97%B6%E9%97%B4/" title="比赛、证书的报名和考试时间">比赛、证书的报名和考试时间</a><time datetime="2024-08-08T16:00:00.000Z" title="Created 2024-08-09 00:00:00">2024-08-09</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
