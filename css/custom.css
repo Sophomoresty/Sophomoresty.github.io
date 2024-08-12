@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'OPPOSans';
+  src: url('/fonts/OPPOSansOS2-5000-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'OPPOSans', sans-serif;
+}
+
 .layout{
   width: 100%;
   max-width:1400px;
